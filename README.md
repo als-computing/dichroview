@@ -21,7 +21,7 @@ This project brings together a number of notable features:
 * Data stream publisher that can be registered as a callback to
   a bluesky RunEngine
 
-The data from this example is a seeries of XMCD spectra collected
+The data from this example is a series of XMCD spectra collected
 at ALS Beamline 4.0.2 (_XMCD_ = x-ray magnetic circular dichroism).
 
 Usage
@@ -45,7 +45,7 @@ Usage
     cp catalogs.yml ~/opt/miniconda3/envs/dash_fastapi_2/share/intake/
     ```
 
-2. Set up the needed ENVironment VARiables
+4. Set up the needed ENVironment VARiables
 
     ```bash
     DATABROKER_MONGO_HOST=<HOST-NAME-OR-IP>:<27017 or PORT>
@@ -55,7 +55,7 @@ Usage
     DEBUG=False  # or True for debug mode
     ```
 
-3. Start the DichroView server
+5. Start the DichroView server
 
     ```bash
     uvicorn dichroview:app --port 8003
@@ -64,19 +64,19 @@ Usage
     python dichroview.py
     ```
 
-4. Open a DichroView client in one or more browsers
+6. Open a DichroView client in one or more browsers
 
     ```
     URL -- http://127.0.0.1:8003/dash
     ```
 
-5. Start the data stream
+7. Start the data stream
 
     ```
     python newest_run.py
     ```
 
-6. Watch data being broadcast to each client
+8. Watch data being broadcast to each client
 
     * If data does not display correctly, it might be because
       events are being streamed too quickly for the dichroview server
