@@ -83,7 +83,6 @@ Usage
       to keep up. Try reducing the rate of the data stream.
     * In 'newest_run.py': Increase the delay time used by the 
       `ApiDelayedCallback` object that publishes data to the API.
-      E.g., try `delay=0.2`
 
     ```python
     # Default delay value is 0.1 sec.
@@ -92,3 +91,10 @@ Usage
     # Increase the delay value to 0.2 sec.
     send_to_api = ApiDelayedCallback(port=8003, delay=0.2)
     ```
+
+Demonstration
+---
+
+[This video](https://github.com/als-computing/dichroview/blob/main/assets/dichroview.mov) 
+shows two browser tabs, each running a DichroView client, as data
+is streamed from a separate process.
