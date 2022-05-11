@@ -1,0 +1,8 @@
+sources:
+  TEST:
+    driver: bluesky-mongo-normalized-catalog
+    args:
+      # root_map: 
+      #   "foo": "bar"
+      metadatastore_db: mongodb://{{ env(DATABROKER_MONGO_USER) }}:{{ env(DATABROKER_MONGO_PASSWORD) }}@{{ env(DATABROKER_MONGO_HOST) }}/test?authSource=admin
+      asset_registry_db: mongodb://{{ env(DATABROKER_MONGO_USER) }}:{{ env(DATABROKER_MONGO_PASSWORD) }}@{{ env(DATABROKER_MONGO_HOST) }}/test?authSource=admin

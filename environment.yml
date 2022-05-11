@@ -1,0 +1,50 @@
+name: dash_ext
+channels:
+  - conda-forge
+  - defaults
+  - lightsource2-tag
+dependencies:
+  - event-model
+  - python=3.8
+  - requests
+  - astropy
+  - conda-build
+  - future
+  - intake ==0.6.2
+  - caproto
+  - nodejs
+  - pip
+  - setuptools
+  - numpy
+  - scikit-image
+  - bluesky <1.7
+  - bluesky-darkframes
+  - caproto >=0.5.1b1,<0.8|>0.8.0
+  - dask
+  - databroker >=1.0.3
+  - distributed
+  - python-dotenv
+  - h5py
+  - ipympl
+  - ipywidgets
+  - jupyterlab <2
+  - lmfit
+  # - matplotlib >=3.4.0
+  - matplotlib ==3.4.2
+  - nbgitpuller
+  - ophyd >=1.5.1b1
+  - pandas
+  - pyepics
+  - suitcase-csv
+  - suitcase-jsonl
+  - suitcase-mongo
+  - suitcase-msgpack
+  - suitcase-tiff
+  - supervisor
+  - xarray <0.18
+  - pymongo
+  - dash
+  - dash-extensions
+  - flask-sockets
+  - fastapi
+  - uvicorn
