@@ -5,6 +5,15 @@
     View a live bluesky event-model data stream
     * API to accept runs & data
     * Process and plot the data
+
+    CREDIT for the websocket broadcasting solution 
+      belongs to William Hayes.
+      https://gist.github.com/wshayes/c22a07e9815d980a9a1d0bd1ab56a690
+    
+    CREDIT for the solution to mounting a Dash subapp in FastAPI
+      belongs to SEary342 and Russell Snyder
+      https://github.com/rusnyder/fastapi-plotly-dash/blob/master/app.py
+
 """
 
 from typing import List
